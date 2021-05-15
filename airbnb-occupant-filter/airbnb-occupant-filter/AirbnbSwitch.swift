@@ -150,7 +150,7 @@ class AirbnbSwitch: UIView {
     
     // MARK: - Event Handlers
     
-    func toggle() {
+    @objc func toggle() {
         state = !state
     }
 }
