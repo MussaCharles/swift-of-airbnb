@@ -172,11 +172,11 @@ class AirbnbCounter: UIView {
     
     // MARK: - Event Handlers
     
-    func handleDecrement() {
+    @objc func handleDecrement() {
         count -= 1
     }
     
-    func handleIncrement() {
+    @objc func handleIncrement() {
         count += 1
     }
     

@@ -23,7 +23,7 @@ class AirbnbOccupantFilter: UIView {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.backgroundColor = Theme.PRIMARY_COLOR
-        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        btn.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
         btn.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         btn.adjustsImageWhenHighlighted = false
         btn.addTarget(self, action: #selector(AirbnbOccupantFilter.showOccupantFilter), for: .touchUpInside)
@@ -65,7 +65,7 @@ class AirbnbOccupantFilter: UIView {
     
     // MARK: - Event Handlers
     
-    func showOccupantFilter() {
+    @objc func showOccupantFilter() {
         let occupantController = AirbnbOccupantFilterController(adultCount: adultCount, childrenCount: childrenCount, infantCount: infantCount, hasPet: hasPet)
         occupantController.delegate = self
         let navigationController = UINavigationController(rootViewController: occupantController)

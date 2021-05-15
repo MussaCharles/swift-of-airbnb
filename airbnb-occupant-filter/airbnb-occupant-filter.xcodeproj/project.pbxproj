@@ -150,6 +150,7 @@
 					75069EF11E938778009BFC12 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 8FNSQJZ54L;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -159,6 +160,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -326,7 +328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ystephen.airbnb-occupant-filter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.4;
 			};
 			name = Debug;
 		};
@@ -339,7 +341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ystephen.airbnb-occupant-filter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.4;
 			};
 			name = Release;
 		};

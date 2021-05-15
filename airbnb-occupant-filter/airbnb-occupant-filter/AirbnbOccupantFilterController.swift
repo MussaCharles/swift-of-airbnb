@@ -71,10 +71,10 @@ class AirbnbOccupantFilterController: UIViewController {
     }()
     
     lazy var dismissButton: UIBarButtonItem = {
-        let btn = UIButton(type: UIButtonType.custom)
+        let btn = UIButton(type: UIButton.ButtonType.custom)
         btn.setImage(UIImage(named: "Delete", in: Bundle(for: AirbnbOccupantFilter.self), compatibleWith: nil), for: .normal)
         btn.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        btn.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
         btn.addTarget(self, action: #selector(AirbnbOccupantFilterController.handleDismiss), for: .touchUpInside)
         let barBtn = UIBarButtonItem(customView: btn)
         return barBtn
@@ -186,11 +186,11 @@ class AirbnbOccupantFilterController: UIViewController {
     
     // MARK: - Event Handlers
     
-    func handleDismiss() {
+    @objc func handleDismiss() {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
-    func handleSave() {
+    @objc func handleSave() {
         if let del = delegate {
             
             adultCount = adultCounter.count
